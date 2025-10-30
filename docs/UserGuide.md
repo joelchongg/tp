@@ -418,51 +418,23 @@ Updates an existing contact's information by either their name or position numbe
   * **Detail field** (`d/`) - A note field with a maximum of 300 characters. Can be left empty to clear existing detail
   * **Tags are flexible** - You can overwrite all tags (`t/`), add to existing tags (`t+/`), or remove specific tags (`t-/`)
 
+<box type="warning" seamless>
+
+**⚠️ Warning: Using `t/` will overwrite ALL existing tags**
+
+When you use `t/` to edit tags, it replaces ALL existing tags with the new ones you specify. Previous tags will be completely removed.
+  * Example: Contact has `[client][priority]` → `edit John t/vendor` → Result: `[vendor]` (old tags are gone)
+
+To keep existing tags while adding new ones, use `t+/` instead.
+
+</box>
+
 **When to use this:**
   * You want to update outdated phone numbers or email addresses
   * You want to add company information to contacts added with `addbasic`
   * You need to correct typos in contact details
   * You want to add or update notes/details about a contact (e.g., meeting notes, preferences, important information)
   * You want to add or change tags for better organization
-
-<box type="warning" seamless>
-
-**   Important: Tag Management - Three Ways to Update Tags**
-
-FastCard offers three different ways to manage tags when editing:
-
-**1. Overwrite All Tags (`t/`)**
-  * Replaces ALL existing tags with new ones
-  * Example: Contact has `[client][priority]`
-  * Run: `edit John t/vendor`
-  * Result: `[vendor]` (old tags are gone)
-  * To remove all tags: `edit John t/`
-
-**2. Add Tags (`t+/`)**
-  * Adds new tags while keeping existing ones
-  * Example: Contact has `[client]`
-  * Run: `edit John t+/priority t+/vip`
-  * Result: `[client][priority][vip]` (old tags kept, new tags added)
-  * Note: Tag matching is case-insensitive. Adding `t+/CLIENT` to a contact with `[client]` won't change anything.
-
-**3. Delete Tags (`t-/`)**
-  * Removes specific tags while keeping others
-  * Example: Contact has `[client][priority][vip]`
-  * Run: `edit John t-/priority t-/vip`
-  * Result: `[client]` (specified tags removed)
-  * Note: You can only delete tags that exist. FastCard will warn you if a tag doesn't exist.
-  * Note: Tag matching is case-insensitive. Using `t-/CLIENT` will remove the `[client]` tag.
-
-**Can combine add and delete:**
-  * Run: `edit John t+/vendor t-/client`
-  * Removes `client` tag and adds `vendor` tag simultaneously
-
-**   Cannot mix overwrite with add/delete:**
-  * `t/` cannot be used together with `t+/` or `t-/` in the same command
-  * Example: `edit John t/vendor t+/client` → Error (conflicting tag operations)
-  * Choose either: overwrite all tags OR add/delete specific tags
-
-</box>
 
 **Examples:**
 
