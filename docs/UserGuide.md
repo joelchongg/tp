@@ -209,7 +209,7 @@ help
 
 <box type="tip" seamless>
 
-  Pro Tips:
+   Pro Tips:
   * **Use `F1` shortcut** - Press `F1` on your keyboard for instant help access without typing
   * **Keep guide bookmarked** - Save the user guide URL in your browser for quick reference
   * **Check before experimenting** - Review command formats in the guide before trying new commands
@@ -245,7 +245,7 @@ Listed all contacts
 
 <box type="tip" seamless>
 
-  Pro Tips:
+   Pro Tips:
   * **Your reset button** - Think of `list` as your "show everything" reset whenever you're narrowed down
   * **Before filtering** - Run `list` first to ensure you're starting with everyone visible
   * **After accidental filter** - If you filtered by mistake and can't find contacts, `list` brings everyone back
@@ -308,7 +308,7 @@ addbasic n/Rahul s.o Kumar p/91112222
 
 <box type="tip" seamless>
 
-  Pro Tip: Use [`addbasic`](#adding-a-contact-quickly-addbasic) during conversations or events to capture contacts immediately. Update with full details later using the `edit` command when you're back at your desk.
+   Pro Tip: Use [`addbasic`](#adding-a-contact-quickly-addbasic) during conversations or events to capture contacts immediately. Update with full details later using the `edit` command when you're back at your desk.
 
 </box>
 
@@ -389,7 +389,7 @@ add n/Mike Kumar p/87654321 e/mike@company.com c/ABC Industries
 
 <box type="tip" seamless>
 
-  Pro Tip:
+   Pro Tip:
   * **Create a tagging system** - Use consistent tags like `client`, `vendor`, `colleague`, `priority` across all contacts. This allows you to filter and find contacts quickly!
 
 </box>
@@ -569,7 +569,7 @@ edit 2 t+/partner t-/client
 
 <box type="tip" seamless>
 
-  Pro Tips:
+   Pro Tips:
   * **Use `t+/` and `t-/` for gradual tag management** - Add or remove tags without worrying about losing existing ones
   * **View before editing** - Use `find` or `list` to see current tags before making changes
   * **Combine add and delete** - Change contact roles in one command: `edit John t+/vendor t-/client`
@@ -648,7 +648,7 @@ find n/Jadon c/Google
 
 <box type="tip" seamless>
 
-  Pro Tips:
+   Pro Tips:
   * **Return to full list** - Use [`list`](#viewing-all-contacts-list) after searching to see all contacts again
   * **Narrow your search** - Use fewer, more specific keywords for better results
   * **Search by tags instead** - If you're looking by tags, use [`filter`](#filtering-contacts-filter) instead
@@ -714,7 +714,7 @@ filter t/client t/vendor t/partner
 
 <box type="tip" seamless>
 
-  Pro Tips:
+   Pro Tips:
   * **Return to full list** - Use `list` after searching to see all contacts again
   * **Search by name instead** - If you're looking by name, use `find` instead
 
@@ -789,7 +789,7 @@ sort f/name o/desc
 
 <box type="tip" seamless>
 
-  Pro Tip:
+   Pro Tip:
   * **Check tag organization** - Use `sort f/tag o/asc` to see how well your tagging system groups contacts
 
 </box>
@@ -867,7 +867,7 @@ Multiple contacts named John Doe found. Please specify the index to delete.
 
 <box type="tip" seamless>
 
-  Pro Tips:
+   Pro Tips:
   * **Always verify first** - Use [`find`](#searching-for-contacts-by-name-find) to check contact details before deleting
   * **Note the index carefully** - After each deletion, indexes shift down (what was 3. becomes 2.)
   * **Consider editing instead** - If information is outdated, use [`edit`](#updating-contact-information-edit) to update rather than deleting and re-adding
@@ -954,7 +954,7 @@ The command appears in your command box, ready to be edited or executed again.
 
 <box type="tip" seamless>
 
-  Pro Tip:
+   Pro Tip:
   * **Skip retyping** - For complex commands with many fields, recall and modify instead of typing from scratch to save time
 
 </box>
