@@ -209,7 +209,7 @@ help
 
 <box type="tip" seamless>
 
-💡 Pro Tips:
+   Pro Tips:
   * **Use `F1` shortcut** - Press `F1` on your keyboard for instant help access without typing
   * **Keep guide bookmarked** - Save the user guide URL in your browser for quick reference
   * **Check before experimenting** - Review command formats in the guide before trying new commands
@@ -245,7 +245,7 @@ Listed all contacts
 
 <box type="tip" seamless>
 
-💡 Pro Tips:
+   Pro Tips:
   * **Your reset button** - Think of `list` as your "show everything" reset whenever you're narrowed down
   * **Before filtering** - Run `list` first to ensure you're starting with everyone visible
   * **After accidental filter** - If you filtered by mistake and can't find contacts, `list` brings everyone back
@@ -308,7 +308,7 @@ addbasic n/Rahul s.o Kumar p/91112222
 
 <box type="tip" seamless>
 
-💡 Pro Tip: Use [`addbasic`](#adding-a-contact-quickly-addbasic) during conversations or events to capture contacts immediately. Update with full details later using the `edit` command when you're back at your desk.
+   Pro Tip: Use [`addbasic`](#adding-a-contact-quickly-addbasic) during conversations or events to capture contacts immediately. Update with full details later using the `edit` command when you're back at your desk.
 
 </box>
 
@@ -389,7 +389,7 @@ add n/Mike Kumar p/87654321 e/mike@company.com c/ABC Industries
 
 <box type="tip" seamless>
 
-💡 Pro Tip:
+   Pro Tip:
   * **Create a tagging system** - Use consistent tags like `client`, `vendor`, `colleague`, `priority` across all contacts. This allows you to filter and find contacts quickly!
 
 </box>
@@ -441,7 +441,7 @@ Updates an existing contact's information by either their name or position numbe
 
 <box type="warning" seamless>
 
-**⚠️ Important: Tag Management - Three Ways to Update Tags**
+**   Important: Tag Management - Three Ways to Update Tags**
 
 FastCard offers three different ways to manage tags when editing:
 
@@ -471,7 +471,7 @@ FastCard offers three different ways to manage tags when editing:
   * Run: `edit John t+/vendor t-/client`
   * Removes `client` tag and adds `vendor` tag simultaneously
 
-**⚠️ Cannot mix overwrite with add/delete:**
+**   Cannot mix overwrite with add/delete:**
   * `t/` cannot be used together with `t+/` or `t-/` in the same command
   * Example: `edit John t/vendor t+/client` → Error (conflicting tag operations)
   * Choose either: overwrite all tags OR add/delete specific tags
@@ -569,7 +569,7 @@ edit 2 t+/partner t-/client
 
 <box type="tip" seamless>
 
-💡 Pro Tips:
+   Pro Tips:
   * **Use `t+/` and `t-/` for gradual tag management** - Add or remove tags without worrying about losing existing ones
   * **View before editing** - Use `find` or `list` to see current tags before making changes
   * **Combine add and delete** - Change contact roles in one command: `edit John t+/vendor t-/client`
@@ -648,7 +648,7 @@ find n/Jadon c/Google
 
 <box type="tip" seamless>
 
-💡 Pro Tips:
+   Pro Tips:
   * **Return to full list** - Use [`list`](#viewing-all-contacts-list) after searching to see all contacts again
   * **Narrow your search** - Use fewer, more specific keywords for better results
   * **Search by tags instead** - If you're looking by tags, use [`filter`](#filtering-contacts-filter) instead
@@ -714,7 +714,7 @@ filter t/client t/vendor t/partner
 
 <box type="tip" seamless>
 
-💡 Pro Tips:
+   Pro Tips:
   * **Return to full list** - Use `list` after searching to see all contacts again
   * **Search by name instead** - If you're looking by name, use `find` instead
 
@@ -789,7 +789,7 @@ sort f/name o/desc
 
 <box type="tip" seamless>
 
-💡 Pro Tip:
+   Pro Tip:
   * **Check tag organization** - Use `sort f/tag o/asc` to see how well your tagging system groups contacts
 
 </box>
@@ -805,7 +805,7 @@ Permanently removes a contact from FastCard - use with caution as this cannot be
 
 <box type="warning" seamless>
 
-**⚠️ WARNING: Permanent Deletion**
+**   WARNING: Permanent Deletion**
 
 Deleted contacts are **permanently removed** and cannot be recovered. Double-check you're deleting the correct contact before pressing Enter.
 
@@ -818,11 +818,11 @@ Deleted contacts are **permanently removed** and cannot be recovered. Double-che
 - `delete INDEX`
 
 **What you need to provide:**
-  * **Either** - The contact's `NAME`
+  * **Either** - The contact's `NAME` (partial search is not supported)
   * **Or** - The contact's `INDEX` (position number in the displayed list)
 
 **What you need to know:**
-  * **Delete by name or index** - Deleting by name or index works similarly to the `edit` command
+  * **Delete by name or index** - Deleting by full name or index works similarly to the `edit` command
   * **Deletion is permanent** - There is no undo function
   * **Delete by name** - Name matching is case-insensitive (`john doe` = `John Doe`)
 
@@ -867,7 +867,7 @@ Multiple contacts named John Doe found. Please specify the index to delete.
 
 <box type="tip" seamless>
 
-💡 Pro Tips:
+   Pro Tips:
   * **Always verify first** - Use [`find`](#searching-for-contacts-by-name-find) to check contact details before deleting
   * **Note the index carefully** - After each deletion, indexes shift down (what was 3. becomes 2.)
   * **Consider editing instead** - If information is outdated, use [`edit`](#updating-contact-information-edit) to update rather than deleting and re-adding
@@ -907,7 +907,7 @@ view 1
 
 <box type="warning" seamless>
 
-**⚠️ WARNING: Potential Stale Information**
+**   WARNING: Potential Stale Information**
   * When you edit the currently focused Contact, the information may become stale! 
   * Simply ensure that you refresh calling `view INDEX` again!
 
@@ -954,7 +954,7 @@ The command appears in your command box, ready to be edited or executed again.
 
 <box type="tip" seamless>
 
-💡 Pro Tip:
+   Pro Tip:
   * **Skip retyping** - For complex commands with many fields, recall and modify instead of typing from scratch to save time
 
 </box>
@@ -977,7 +977,7 @@ This allows users to back up or view their contact list in spreadsheet applicati
 
 <box type="warning" seamless>
 
-**⚠️ WARNING: Potential Overwrite!**
+**   WARNING: Potential Overwrite!**
 * If a file with the same name already exists on your Desktop,
   it will be **overwritten without confirmation**.
 
@@ -1017,7 +1017,7 @@ export f/ContactList
 
 <box type="tip" seamless>
 
-💡 **Pro Tip:**
+  Pro Tip:
 * Need to share your contact list with others? Just **export it!**
 * Use the `export` command to instantly create a sharable CSV file on your Desktop.
 * Send the exported file via email or upload it to your team drive — everyone can open it easily in Excel or Numbers to view your contact list.
@@ -1031,7 +1031,7 @@ Permanently deletes every contact from FastCard - use only when starting complet
 
 <box type="warning" seamless>
 
-**⚠️ WARNING: This permanently deletes ALL contacts from FastCard. This cannot be undone.**
+**   WARNING: This permanently deletes ALL contacts from FastCard. This cannot be undone.**
 
 Before using `clear`:
   * **Backup your data** - Copy the `fastcard.json` file from your FastCard data folder
@@ -1127,7 +1127,7 @@ FastCard saves your contacts automatically every time you make a change.
 Your contact data is stored in a file called `fastcard.json` located in `[JAR file location]/data/`.
 Advanced users are welcome to update data directly by editing that data file.
 
-**⚠️ WARNING: Manual editing is risky**
+**   WARNING: Manual editing is risky**
 
 **If you edit this file incorrectly:**
   * FastCard will delete **ALL** your data and start with an empty file
