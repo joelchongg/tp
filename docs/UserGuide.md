@@ -432,6 +432,17 @@ Updates an existing contact's information by either their name or position numbe
   * **Detail field** (`d/`) - A note field with a maximum of 300 characters. Can be left empty to clear existing detail
   * **Tags are flexible** - You can overwrite all tags (`t/`), add to existing tags (`t+/`), or remove specific tags (`t-/`)
 
+<box type="warning" seamless>
+
+**⚠️ Warning: Using `t/` will overwrite ALL existing tags**
+
+When you use `t/` to edit tags, it replaces ALL existing tags with the new ones you specify. Previous tags will be completely removed.
+  * Example: Contact has `[client][priority]` → `edit John t/vendor` → Result: `[vendor]` (old tags are gone)
+
+To keep existing tags while adding new ones, use `t+/` instead.
+
+</box>
+
 **When to use this:**
   * You want to update outdated phone numbers or email addresses
   * You want to add company information to contacts added with `addbasic`
