@@ -977,7 +977,7 @@ export f/ContactList
 
 <box type="tip" seamless>
 
-  Pro Tip:
+  Pro Tips:
 * Need to share your contact list with others? Just **export it!**
 * Use the `export` command to instantly create a sharable CSV file on your Desktop.
 * Send the exported file via email or upload it to your team drive — everyone can open it easily in Excel or Numbers to view your contact list.
