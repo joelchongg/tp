@@ -221,7 +221,7 @@ The filtering mechanism is facilitated by `FilterCommand` and `FilterCommandPars
     * Verifies no input exists between "filter" and the first prefix
     * Confirms no empty tags are present
     * Validates all tag names are alphanumeric and at most 30 characters
-
+<br>
 3. **Model update**: `FilterCommand#execute()` invokes `Model#updateFilteredPersonList(predicate)` to apply the filtering operation.
 
 4. **Filtering execution**: The model updates its filtered contact list by applying the `TagsContainTagPredicate`, which matches any contact whose tags contain at least one of the specified tags (case-insensitive matching).
