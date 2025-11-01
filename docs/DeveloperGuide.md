@@ -572,24 +572,34 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 **Extensions**
    
   * 1a. User does not provide both field and order parameters.
+    
     * 1a1. System shows an error message.
+
       Use case resumes at step 1.
 
   * 1b. User provides input between "sort" and the first prefix.
+    
     * 1b1. System shows an error message.
+
       Use case resumes at step 1.
 
   * 1c. User provides duplicate prefixes.
+
     * 1c1. System shows an error message.
+
       Use case resumes at step 1.
 
   * 2a. The provided field is invalid (not "name" or "tag").
+    
     * 2a1. System shows an error message.
+
       Use case resumes at step 1.
 
   * 2b. The provided order is invalid (not "asc", "desc", "ascending", or "descending").
+
     * 2b1. System shows an error message.
-    Use case resumes at step 1.
+
+      Use case resumes at step 1.
 
 **Use case UC05 - Filter contacts by tags**
 
@@ -604,24 +614,34 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 **Extensions**
 
   * 1a. User does not provide any tag parameters.
+    
     * 1a1. System shows an error message.
+    
       Use case resumes at step 1.
 
   * 1b. User provides input between "filter" and the first tag prefix.
+
     * 1b1. System shows an error message.
+
       Use case resumes at step 1.
 
   * 2a. One or more tags are empty.
-    * 2b1. System shows an error message.
+
+    * 2a1. System shows an error message.
+
       Use case resumes at step 1.
   
   * 2b. One or more tags contain non-alphanumeric characters
+
     * 2b1. System shows an error message.
+
       Use case resumes at step 1.
 
   * 3a. No contacts match the specified tags.
+    
     * 3a1. System displays an empty list with a count of 0 contact.
-    Use case ends.
+    
+      Use case ends.
 
 **Use case: UC06 - List contacts**
 
