@@ -211,10 +211,6 @@ Sorting is facilitated by `SortCommand` and `SortCommandParser`, following these
 The sequence diagram below shows how the sort operation works:
 <puml src="diagrams/SortSequenceDiagram.puml" width="100%" />
 
-The activity diagram below depicts the execution flow of the sort command:
-<puml src="diagrams/SortActivityDiagram.puml" width="100%" />
-
-
 ### Filter Feature
 The filtering mechanism is facilitated by `FilterCommand` and `FilterCommandParser`, following these steps:
 
