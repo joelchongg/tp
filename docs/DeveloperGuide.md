@@ -1102,3 +1102,6 @@ testers are expected to do more *exploratory* testing.
 ### Appendix: Planned Enhancements
 
 Team size: 5
+
+1. **Make filter error messages more error-specific.**
+Some errors from the filter command can be made more specific. We plan to make the error message mention the reason for the failure (invalid tag, empty tag, etc).
